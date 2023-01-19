@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(97, 57, 39);
+    background-color: rgb(255, 237, 215);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 200px 27px 200px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+    color: rgb(206, 58, 0);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 50px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.nav-home {
+    background-color: rgb(206, 58, 0);
+    color: rgb(255, 237, 215);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.nav-home:hover {
+    background-color: rgb(97, 57, 39);
+}
+
+.nav-item:hover {
+    color: rgb(206, 58, 0);
+}
+
+.navigation i {
+    cursor: pointer;
+    color: rgb(206, 58, 0);
+    font-size: 20px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.home-texts {
+    width: 10000px;
+}
+
+.text-h4 {
+    color: rgb(206, 58, 0);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.text-h1 {
+    font-size: 54px;
+}
+
+.text-p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.home-button {
+    background-color: rgb(206, 58, 0);
+    color: rgb(255, 237, 215);
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.home-button:hover {
+    background-color: rgb(97, 57, 39);
+}
+
+.home-socials {
+    display: flex;
+    gap: 20px;
+    padding-top: 24px;
+}
+
+.home-socials i {
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(97, 57, 39);
+}
+
+.home-socials i:hover {
+    color: rgb(206, 58, 0)
+}
+
+.img-home {
+    max-width: 1000px;
+}
+
+.arrow-down {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-down i {
+    color: rgb(206, 58, 0);
+    font-size: 60px;
+}
+
+.arrow-down i:hover {
+    cursor: pointer;
+    color: rgb(97, 57, 39);
+}
