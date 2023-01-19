@@ -41,7 +41,7 @@
 }
 
 .nav-home:hover {
-    background-color: rgb(97, 57, 39);
+    background-color: rgb(219, 95, 45);
 }
 
 .nav-item:hover {
@@ -77,29 +77,52 @@
     font-size: 54px;
 }
 
-.text-p {
+p {
     font-size: 22px;
     font-weight: 500;
 }
 
-.home-button {
-    background-color: rgb(206, 58, 0);
-    color: rgb(255, 237, 215);
-    font-weight: 600;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 8px;
-    display: inline-block;
+.promotion-text {
+    padding-top: 40px;
+    font-size: 16px;
+}
+.home-form {
+    margin-top: 14px;
 }
 
-.home-button:hover {
-    background-color: rgb(97, 57, 39);
+form input {
+    background-color: rgb(255, 243, 229);
+    border-radius: 8px;
+    font-weight:600;
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 8px;
+    border-color: rgb(97, 57, 39);
+}
+
+input:focus {
+    outline-color: rgb(206, 58, 0);
+}
+
+form button {
+    background-color: rgb(206, 58, 0);
+    padding: 9px 20px;
+    color: rgb(255, 243, 229);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(219, 95, 45);
 }
 
 .home-socials {
     display: flex;
     gap: 20px;
-    padding-top: 24px;
+    padding-top: 20px;
 }
 
 .home-socials i {
@@ -114,20 +137,4 @@
 
 .img-home {
     max-width: 1000px;
-}
-
-.arrow-down {
-    padding-top: 70px;
-    display: flex;
-    justify-content: center;
-}
-
-.arrow-down i {
-    color: rgb(206, 58, 0);
-    font-size: 60px;
-}
-
-.arrow-down i:hover {
-    cursor: pointer;
-    color: rgb(97, 57, 39);
 }
