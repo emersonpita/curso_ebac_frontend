@@ -1,11 +1,34 @@
 const form = document.getElementById("form");
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
-  const fieldA = document.getElementById("fieldA").value;
-  const fieldB = document.getElementById("fieldB").value;
-  if (fieldB > fieldA) {
-    alert("Formulário válido!");
-  } else {
-    alert("Formulário inválido!");
-  }
+const number_a = document.getElementById("number-a");
+const number_b = document.getElementById("number-b");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  checkInputs()
 });
+
+function checkInputs() {
+  const number_aValue = number_a.value
+  const number_bValue = number_b.value
+
+  if (number_bValue < number_aValue) {
+    errorValidation(number_b)
+    errorValidation(number_a)
+  } else {
+    successValidation(number_a)
+    successValidation(number_b)
+  }
+};
+
+function errorValidation (input) {
+  const formControl = input.parentElement;
+
+  formControl.className = "form-control error"
+}
+
+function successValidation (input) {
+  const formControl = input.parentElement;
+
+  formControl.className = "form-control success"
+}

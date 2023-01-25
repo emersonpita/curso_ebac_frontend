@@ -5,22 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Formulário com Validação</title>
+    <title>Formulário Javascript</title>
 </head>
-<body class="body">
-    <section class="container">
-    <h1 class="formulario">Formulário</h1>
-    <br><br>
-    <form id="form">
-        <label for="fieldA" class="label">Campo A:</label>
-        <input type="number" class="input" id="fieldA">
-        <br><br>
-        <label for="fieldB" class="label">Campo B:</label>
-        <input type="number" class="input" id="fieldB">
-        <br><br><br>
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </section>
-      <script src="script.js"></script>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Formulário de Validação</h2>
+    </div>
+    <form class="form" id="form">
+      <div class="form-control">
+        <label for="number-a">Campo A</label>
+        <input type="number" id="number-a">
+        <i><img class="img-success" src="icones/success-icon.svg" alt="Ícone de Sucesso"></i>
+        <i><img class="img-error"src="icones/error-icon.svg" alt="Ícone de Erro"></i>
+        <small>Este número precisa ser menor que o do campo B.</small>
+      </div>
+      <div class="form-control">
+        <label for="number-b">Campo B</label>
+        <input type="number" id="number-b">
+        <i><img class="img-success" src="icones/success-icon.svg" alt="Ícone de Sucesso"></i>
+        <i><img class="img-error" src="icones/error-icon.svg" alt="Ícone de Erro"></i>
+        <small>Este número precisa ser maior que o do campo A.</small>
+      </div>
+      <button type="submit">ENVIAR</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
