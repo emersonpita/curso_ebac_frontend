@@ -15,7 +15,14 @@ function checkInputs() {
   if (number_bValue < number_aValue) {
     errorValidation(number_b)
     errorValidation(number_a)
-  } else {
+  } 
+  
+  else if (number_bValue == number_aValue) {
+    errorValidation(number_b)
+    errorValidation(number_a)
+  }
+  
+  else {
     successValidation(number_a)
     successValidation(number_b)
   }
