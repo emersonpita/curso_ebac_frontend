@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+
+}
+
+#task-list li {
+    list-style: none;
+    margin: 10px 0;
+}
+  
+.completed {
+    text-decoration: line-through;
+}
+
+h1 {
+    text-align: center;
+}
